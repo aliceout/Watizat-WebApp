@@ -31,7 +31,7 @@ const authRefresh: {
 
     // Appel à l'API pour rafraîchir le token
     const refreshPromise = await axios
-      .post<{ data: AuthResponse }>('https://api.watizat.app/auth/refresh', {
+      .post<{ data: AuthResponse }>('https://back.watizat.app/auth/refresh', {
         refresh_token: user.token.refresh_token,
         mode: 'json',
       })
@@ -80,7 +80,7 @@ const authRefresh: {
 // Créer une instance d'axios avec la base URL
 /* eslint-disable import/prefer-default-export */
 export const axiosInstance = axios.create({
-  baseURL: 'https://api.watizat.app',
+  baseURL: 'https://back.watizat.app',
 });
 
 // Interceptor pour les requêtes

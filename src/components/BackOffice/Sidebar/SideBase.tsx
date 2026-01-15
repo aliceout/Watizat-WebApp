@@ -87,7 +87,7 @@ export default function Sidebar({ sidebarOpen, setSidebarOpen }: Props) {
       },
       {
         name: 'Back-end',
-        href: 'https://api.watizat.app',
+        href: 'https://back.watizat.app',
         target: '_blank',
         icon: CircleStackIcon,
         active: true,
